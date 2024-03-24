@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="circle3vu.jpg"alt="logo"></div>
+            <li ><a href="index.html">Home</a></li>
+            <li ><a href="#About">About</a></li>
+            <li ><a href="#contact">Feedback </a></li>
+            <li ><a href="survey.html" target="_blank">Survey</a></li>
+            <li ><a href="mailto: abc@gmail.com">Mail us  </a></li>
+            <li ><a href="https://www.chatbase.co/chatbot-iframe/_RUopbeMwL-iuZXejC-tN" target="_blank">Chatbot</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+           <input type="text" name="search" id="search">
+           <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Mental Health </p>
+                <p class="text-small">Mental health is about how people think, feel, and behave. 
+                    Mental health care professionals can help people manage conditions such as depression,
+                     anxiety, bipolar disorder, addiction, and other disorders that affect their thoughts, 
+                     feelings, and behaviors. </p>
+                <div class="buttons">
+                    <button class="btn"><a href="learnmore.html" target="_blank"> Learn more </a> </button>
+                    <button class="btn"><a href="Remedies.html" target="_blank" >Remedies</a></button>
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="main.jpeg" alt=" Mental health">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="About" >
+        <div class="paras">
+        <p class="sectionTag text-big">Risk factors for mental health conditions.</p>
+        <p class="sectionSubTag text-small">
+            Everyone is at some risk of developing a mental health disorder,
+             regardless of age, sex, income, or ethnicity. In the U.S. and much of the developed world,
+             depression is one of the leading causes of disability.
+             It is important to note that mental well-being depends on a balance of factors, and 
+             several elements may contribute to the development of a mental health disorder.
+             The following factors can contribute to mental health conditions.
+        </div>
+            <div class="thumbnail">
+                <img src="img2.webp" alt="building image">
+            </div>
+        </p>
+    </section>
+
+    <section class="section section-left ">
+        <div class="paras">
+        <p class="sectionTag text-big">Socioeconomic pressure</p>
+        <p class="sectionSubTag text-small">
+            Limited financial resources and belonging to marginalized ethnic groups
+             can heighten the likelihood of mental health disorders due to biases in healthcare.
+              A 2015 Iranian study identified socioeconomic factors such as poverty and living on 
+              the outskirts of urban areas as contributors to mental health conditions. 
+              The study categorized factors affecting mental health care into modifiable
+               (socioeconomic conditions, occupation, social involvement, education, housing quality) 
+               and nonmodifiable (gender, age, ethnicity, nationality) factors. Being female and having a
+                weak economic status were associated with a higher risk of mental health issues in the study.
+        </div>
+            <div class="thumbnail">
+                <img src="img3.jpg" alt="building image">
+            </div>
+        </p>
+    </section>
+
+    <section class="section" >
+        <div class="paras">
+        <p class="sectionTag text-big">Childhood adversity</p>
+        <p class="sectionSubTag text-small">
+            Several studiesTrusted Source report that childhood traumas such as child abuse,
+             parental loss, parental separation, and parental illness significantly affect a 
+             growing child's mental and physical health.
+            </p>
+            <p class="sectionSubTag text-small">
+                There are associations between childhood abuse and other adverse 
+                events and mental health disorders. These experiences also make people
+                 vulnerable to post-traumatic stress disorder (PTSD).
+                write it in short , and don't change the content.
+            </p>
+        </div>
+            <div class="thumbnail">
+                <img src="img4.jpg" alt="building image">
+            </div>
+        </p>
+    </section>
+
+    <section class="section section-left ">
+        <div class="paras">
+        <p class="sectionTag text-big">Biological factors</p>
+        <p class="sectionSubTag text-small">
+            Family history can elevate the risk of mental health conditions,
+             as certain genes and variants may predispose individuals. However,
+              having these genes doesn't ensure disorder development. Conversely,
+               those lacking such genes or familial history may still experience 
+               mental health disorders. Additionally, chronic stress and conditions
+                like depression and anxiety can stem from underlying physical health
+                 issues such as cancer, diabetes, and chronic pain.
+        </div>
+            <div class="thumbnail">
+                <img src="img5.jpg" alt="building image">
+            </div>
+        </p>
+    </section>
+   
+    
+    <section class="contact" id="contact">
+        <h2 class="text-center">Feedback</h2>
+        <!-- <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Elaborate your concern" ></textarea>
+            <button class="btn btn-sm btn-dark">Submit</button>
+        </div> -->
+        <div class="form">
+        <form id="feedbackForm" onsubmit="submitForm(event)">
+            <label for="name">Name:</label><br>
+            <input  class="form-input" type="text" id="name" placeholder="Enter your name" name="name"  required><br>
+            
+            <label for="phone">Phone Number:</label><br>
+            <input class="form-input" type="tel" id="phone" placeholder="Enter your Phone" name="phone" pattern="[0-9]{10}" required><br>
+            
+            <label for="email">Email:</label><br>
+            <input class="form-input" type="email" id="email" placeholder="Enter your email" name="email" required><br>
+            
+            <label for="concern">Feedback:</label><br>
+            <textarea class="form-input" id="concern"cols="30" rows="10" placeholder="Elaborate your concern" name="concern" required></textarea><br>
+            
+            <input class="btn btn-sm btn-dark" type="submit" value="Submit">
+          </form>
+          
+          <script>
+          function submitForm(event) {
+            event.preventDefault();
+            alert("Your feedback is submitted");
+            document.getElementById("feedbackForm").reset();
+          }
+          </script>
+          </div>
+    </section>
+    
+   
+
+    <footer class="background">
+        <p class="text-footer">
+             Copyright &copy; 3 visions united- All rights reserved ||
+             Credit for information mentioned  <a href="https://www.medicalnewstoday.com/articles/154543#definition" style="color: white; " target="_blank">&nbsp;&nbsp;  Medicalnewstoday </a> </p>
+        </p>
+    </footer>
+    <script src="resp.js"></script> 
+    <!-- <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector
+    </script> -->
+<!-- </body>
+</html>
+
+
