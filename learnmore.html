@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learnmore</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .heading{
+            align-items: center;
+            text-align: center;
+        }
+    .card {
+      width: 300px;
+      height: 500px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 30px;
+      margin: 20px;
+      float: left;
+      text-align: center;
+      align-items: center;
+    }
+    
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .View{
+        background-color: blue;
+        color: white;
+    }
+    .list{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="img1.jpg"alt="logo"></div>
+            <li ><a href="index.html">Home</a></li>
+            <li ><a href="#About">About</a></li>
+            <li ><a href="#contact">Contact Us </a></li>
+            <li ><a href="survey.html" target="_blank">Survey</a></li>
+            <li ><a href="mailto: abc@gmail.com">Mail us  </a></li>
+            <li ><a href="https://www.chatbase.co/chatbot-iframe/_RUopbeMwL-iuZXejC-tN" target="_blank">Chatbot</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+           <input type="text" name="search" id="search">
+           <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <h1 class="heading"> Types of Mental Disorders</h1>
+    <div class="allcards section" >
+    <div class="card">
+        <img src="anxiety.jpg" alt=" Anxiety Disorder">
+        <div class="topic">1. Anxiety Disorder</div>
+        <div class="description">
+          <p>Anxiety disorders are characterized by severe fear or anxiety related to certain objects or situations, often leading to avoidance behavior.<br>
+            <b>Types of Anxiety Disorders :</b><br>
+            <ol class="list">
+                <li> Generalized Anxiety Disorder (GAD)</li>
+                <li>Panic Disorder</li>
+                <li>Phobias (including specific phobias, social phobia, and agoraphobia)</li>
+                <li>Obsessive-Compulsive Disorder (OCD)</li>
+                <li>Post-Traumatic Stress Disorder (PTSD)</li>
+                <br>  <a href="https://www.mayoclinic.org/diseases-conditions/anxiety/symptoms-causes/syc-20350961" target="_blank">Read more </a>
+            </ol></div>
+            
+        <button class="btn-view-more View" onclick="toggleDescription(1)">View</button>
+      </div>
+      <div class="card">
+        <img src="mood.jpg" alt=" Mood Disorder">
+        <div class="topic">2. Mood Disorders</div>
+        <div class="description">
+            <p>
+            Mood disorders, also known as affective or depressive disorders, are characterized by significant changes in mood. These changes typically involve episodes of either mania, characterized by heightened energy and euphoria, or depression, marked by persistent feelings of sadness or loss of interest in previously enjoyed activities (anhedonia).
+                <ol class="list">
+                <li>Major Depression </li>
+                <li>Bipolar Disorder</li>
+                <li>Seasonal Affective Disorder (SAD)</li>    
+                </ol>  
+            </p>
+                <br>  <a href="https://www.medicalnewstoday.com/articles/324437" target="_blank">Read more </a>
+            </ol></div>
+            
+        <button class="btn-view-more View" onclick="toggleDescription(2)">View</button>
+      </div>
+      <div class="card">
+        <img src="sd.jpg" alt=" Schizophrenia Disorders">
+        <div class="topic">3. Schizophrenia Disorders</div>
+        <div class="description">
+            <p>
+                The term “schizophrenia” often refers to a spectrum of disorders characterized by features of psychosis 
+                and other severe symptoms. These are highly complex conditions.
+
+                According to the NIMH, signs of schizophrenia typically develop between the ages of 16 and 30Trusted Source.
+                 A person will have thoughts that appear fragmented, and may also find it hard to process information.
+            </p>
+                 <a href="https://www.mayoclinic.org/diseases-conditions/schizophrenia/symptoms-causes/syc-20354443" target="_blank">Read more </a>
+            </ol></div>
+            
+        <button class="btn-view-more View" onclick="toggleDescription(3)">View</button>
+      </div>
+      </div>
+      
+      <script>
+        function toggleDescription(cardNumber) {
+          var description = document.querySelectorAll('.description')[cardNumber - 1];
+          var btn = document.querySelectorAll('.btn-view-more')[cardNumber - 1];
+          
+          if (description.style.display === 'none') {
+            description.style.display = 'block';
+            btn.textContent = 'View ';
+          } else {
+            description.style.display = 'none';
+            btn.textContent = 'View';
+          }
+        }
+        </script>
+
+</body>
+</html>
