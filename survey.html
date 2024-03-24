@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Survey</title>
+    <link rel="stylesheet" href="surveystyles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+       body{
+        padding: 10px;
+       } 
+</style>
+<body>
+    
+        <nav class="navbar background h-nav-resp">
+            <ul class="nav-list v-class-resp">
+                <div class="logo"><img src="img1.jpg"alt="logo"></div>
+                <li ><a href="index.html">Home</a></li>
+                <li ><a href="#About">About</a></li>
+                <li ><a href="#contact">Contact Us </a></li>
+                <li ><a href="survey.html">Survey</a></li>
+                <li ><a href="mailto: abc@gmail.com">Mail us  </a></li>
+                <li ><a href="https://www.chatbase.co/chatbot-iframe/_RUopbeMwL-iuZXejC-tN" target="_blank">Chatbot</a></li>
+            </ul>
+            <div class="rightNav v-class-resp">
+               <input type="text" name="search" id="search">
+               <button class="btn btn-sm">Search</button>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    <div class="container">
+        <h1>Mental Health Survey</h1>
+        <h4> Welcome to our Mental Health Assessment Survey. <br>
+            Interpretations of scores:
+            <br>
+            <i>Score Below 30</i>: Your mental health is stable. Keep up the good work!
+              <br>
+            <i>Score Between 30 and 44</i>: Your mental health is concerning. Consider remedies and seek professional help if needed.
+            <br>
+            <i>Score 45 and Above</i>: Your mental health is unstable. It's essential to seek professional help promptly.
+            <br>
+            Thank you for your participation and commitment to your well-being. Let's begin the survey. </h4><br>
+        <form id="surveyForm">
+            <!-- Questions -->
+            <!-- 1 -->
+            <div class="question">
+                <label for="q1">1. On a scale of 1 to 5, how often do you experience feelings of anxiety?</label>
+                <select id="q1" required>
+                    <option value="1">Never</option>
+                    <option value="2">Rarely</option>
+                    <option value="3">Sometimes</option>
+                    <option value="4">Often</option>
+                    <option value="5">Always</option>
+                </select>
+            </div>
+            <!-- 2 -->
+            <div class="question">
+                <label for="q2">2. How would you rate your overall level of stress in the past month?</label>
+                <select id="q2" required>
+                    <option value="1">Very low</option>
+                    <option value="2">Low</option>
+                    <option value="3">Moderate</option>
+                    <option value="4">High</option>
+                    <option value="5">Very high</option>
+                </select>
+            </div>
+             <!-- 3 -->
+             <div class="question">
+                <label for="q3">3. Have you experienced any depressive symptoms in the past year?</label>
+                <select id="q3" required>
+                    <option value="1">Yes, frequently</option>
+                    <option value="2">Yes, occasionally</option>
+                    <option value="3">No, not at all</option>
+                    
+                </select>
+            </div>
+                    <!-- 4 -->
+                    <div class="question">
+                        <label for="q4">4. How often do you feel overwhelmed by your responsibilities?</label>
+                        <select id="q4" required>
+                            <option value="1">Never</option>
+                            <option value="2">Rarely</option>
+                            <option value="3">Sometimes</option>
+                            <option value="4">Often</option>
+                            <option value="5">Always</option> 
+                        </select>
+                    </div>
+                            <!-- 5 -->
+                            <div class="question">
+                                <label for="q5">5.How satisfied are you with your current sleep patterns?</label>
+                                <select id="q5" required>
+                                    <option value="1">Very satisfied</option>
+                                    <option value="2">Satisfied</option>
+                                    <option value="3">Neutral</option>
+                                    <option value="4">Dissatisfied</option>
+                                    <option value="5">Very dissatisfied</option> 
+                                </select>
+                            </div>
+                                 <!-- 6 -->
+                                 <div class="question">
+                                    <label for="q6">6.Do you feel comfortable discussing your mental health concerns with others?</label>
+                                    <select id="q6" required>
+                                        <option value="1">Yes, always</option>
+                                        <option value="2">Yes, sometimes</option>
+                                        <option value="3">No, rarely</option>
+                                        <option value="4">No, never</option>
+                                    </select>
+                                </div>
+                                <!-- 7 -->
+                            <div class="question">
+                                <label for="q7">7.How often do you engage in activities that help you relax and unwind?</label>
+                                <select id="q7" required>
+                                    <option value="1">Daily</option>
+                                    <option value="2">Several times a week</option>
+                                    <option value="3">Occasionally</option>
+                                    <option value="4">Rarely</option>
+                                    <option value="5">Never</option> 
+                                </select>
+                            </div>
+                              <!-- 8 -->
+                              <div class="question">
+                                <label for="q8">8.Have you sought professional help for your mental health in the past year?</label>
+                                <select id="q8" required>
+                                    <option value="1">Yes, regularly</option>
+                                    <option value="2">Yes, but infrequently</option>
+                                    <option value="3">No, but considering it</option>
+                                    <option value="4">No, not at all</option>
+                                </select>
+                            </div>
+                            <!-- 9 -->
+                            <div class="question">
+                                <label for="q9">9. In the past month, how often have you felt a lack of motivation or interest in activities you once enjoyed?</label>
+                                <select id="q9" required>
+                                    <option value="1">Never</option>
+                                    <option value="2">Rarely</option>
+                                    <option value="3">Sometimes</option>
+                                    <option value="4">Often</option>
+                                    <option value="5">Always</option> 
+                                </select>
+                                <!-- 10 -->
+                            <div class="question">
+                                <label for="q10">10. How would you rate your overall emotional well-being in the past year?</label>
+                                <select id="q10" required>
+                                    <option value="1">Excellent</option>
+                                    <option value="2">Good</option>
+                                    <option value="3">Fair</option>
+                                    <option value="4">Poor</option>
+                                    <option value="5"> Very poor</option> 
+                                </select>
+
+            <!-- Add more questions -->
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
